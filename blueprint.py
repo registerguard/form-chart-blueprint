@@ -1,4 +1,4 @@
 from flask import Blueprint
 
-NAME = "RG Basic Blueprint"
+NAME = "RG Form Chart Blueprint"
 blueprint = Blueprint("base", __name__)
