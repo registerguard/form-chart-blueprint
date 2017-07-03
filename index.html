@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+{% block extra_css %}{% endblock %}
+
+{% block content %}
+	<div id="story">
+		<p class="BodyText-BodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut semper libero, in tempus ante. Nam vestibulum tortor non blandit accumsan. Proin eget nisi accumsan, euismod justo a, ullamcorper mauris.</p>
+		<ul>
+			{% for row in data %}
+				<li>{{ row.column1 }}</li>
+			{% endfor %}
+		</ul>
+	</div><!-- /#story -->	
+{% endblock %}
+
+{% block extra_js %}{% endblock %}
