@@ -14,10 +14,10 @@ def newproject_copy(site, git):
     blueprint_path = os.path.join(site.path, '_blueprint')
     
     puts("Copying _includes to new project")
-    shutil.copy(os.path.join(blueprint_path, '_includes'), os.path.join(site.path, '_includes'))
+    shutil.copytree(os.path.join(blueprint_path, '_includes'), os.path.join(site.path, '_includes'))
     
     puts("Copying raw to new project")
-    shutil.copy(os.path.join(blueprint_path, 'raw'), os.path.join(site.path, 'raw'))
+    shutil.copytree(os.path.join(blueprint_path, 'raw'), os.path.join(site.path, 'raw'))
 
 @blueprint.app_template_filter()
 def process_text(text, scrub=True):
