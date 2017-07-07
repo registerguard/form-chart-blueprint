@@ -9,7 +9,7 @@ NAME = "RG Form Chart Blueprint"
 blueprint = Blueprint("base", __name__)
 
 @register_hook('newproject')
-def newproject_copy(site):
+def newproject_copy(site, git):
     """ Copy _includes and raw directories to new project """
     blueprint_path = os.path.join(site.path, '_blueprint')
     
